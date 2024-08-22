@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="right-col">
+            <h1>
+               Generate a <span id="color-changing" style="color: #10B981;">random password</span>
+            </h1>
+            <p>Never use an insecure password again.</p>
+
+                <div>
+                    <label for="password-one">
+                        <input type="text" id="password-one">
+                    </label>
+            
+                    <button id="copy">
+
+                    </button>
+                    <label for="password-two">
+                        <input type="text" id="password-two">
+                    </label>
+
+                    <button id="copy">
+
+                    </button>
+                </div>
+
+        </div>
+
+        <div class="left-col">
+            <p>
+                Character Length <span id="character-length">0</span>
+            </p>
+            <button>
+                +
+            </button>
+            <button>
+                -
+            </button>
+                <div>
+                    <ul>
+                        <li><input type="checkbox">Include Uppercase Letters</button></li>
+                        <li><input type="checkbox">Include Lowercase Letters</button></li>
+                        <li><input type="checkbox">Include Numbers</button></li>
+                        <li><input type="checkbox">Include Symbols</button></li>
+                    </ul>
+
+                <div>
+                    <label for="strength"> 
+                        <input type="text" id="strength" placeholder="STRENGTH">
+                    </label>
+                    <div id="color-gray"></div>
+                    <div id="color-green"></div>
+                    <div id="color-red"></div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
