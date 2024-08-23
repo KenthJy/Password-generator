@@ -20,14 +20,14 @@
                         <input type="text" id="password-one" placeholder="P4S5W0rD!" disabled>
                     </label>
             
-                    <button id="copy">
+                    <button id="copy" class="copy-one">
 
                     </button>
                     <label for="password-two">
                         <input type="text" id="password-two" placeholder="P4S5W0rD!" disabled>
                     </label>
 
-                    <button id="copy">
+                    <button id="copy" class="copy-one">
 
                     </button>
                 </div>
@@ -36,22 +36,22 @@
 
         <div class="left-col">
             <p>
-                Character Length: <span id="character-length">0</span>
+                Character Length: <span id="character-length" size="10" maxlength="15">0</span>
             </p>
             <div class="flexed">
             <button id="increment">
                 +
-            </button id="decrement">
-            <button>
+            </button>
+            <button id="decrement">
                 -
             </button>
         </div>
                 <div class="myinputs">
                     <ul>
-                        <li><input type="checkbox">Include Uppercase Letters</button></li>
-                        <li><input type="checkbox">Include Lowercase Letters</button></li>
-                        <li><input type="checkbox">Include Numbers</button></li>
-                        <li><input type="checkbox">Include Symbols</button></li>
+                        <li><input id="include-uppercase" type="checkbox" checked>Include Uppercase Letters</button></li>
+                        <li><input id="include-lowercase" type="checkbox" checked>Include Lowercase Letters</button></li>
+                        <li><input id="include-numbers" type="checkbox" checked>Include Numbers</button></li>
+                        <li><input id="include-symbols" type="checkbox" checked>Include Symbols</button></li>
                     </ul>
 
                 <div class="flexing">
@@ -59,9 +59,9 @@
                         <input type="text" id="strength" placeholder="STRENGTH" disabled>
                     </label>
              
-                    <div id="color-gray" class="color"></div>
-                    <div id="color-green" class="color"></div>
-                    <div id="color-red" class="color"></div>
+                    <div id="color-gray" class="color" style="background-color: white;"></div>
+                    <div id="color-green" class="color" style="background-color: white;"></div>
+                    <div id="color-red" class="color" style="background-color: white"></div>
                     
                 </div>
                 <button id="generate">
