@@ -1,18 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 *, *::after,*::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
 body{
-    background-color: black;
+    background-color: #1F2937;
     color: white;
+    font-family: "Karla", sans-serif;
 }
+.right-col>p{
+    color: rgb(194, 191, 191);
+}
+
+input[type="text"]::placeholder{
+    opacity: 0.5;
+}
+
+input[type="text"], fieldset{
+    background-color: #273549;
+    border: none;
+    width:17rem;
+    height: 2.5rem;
+    border-radius: .4rem;
+    padding: 1rem;
+    color: green;
+}
+
+#thePasswords{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -20,31 +44,115 @@ body{
     display: grid;
     place-items: center;
 }
+
 .right-col{
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
+
 .container>.right-col>h1{
     font-family: "Karla", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: .2rem auto;
 }
 
 .container>.right-col>p{
     margin: .2rem auto;
 }
-#password{
-    position: absolute;
-    border: none;
-    background-color: rgb(178, 182, 182);
-    padding: .5rem 3rem;
-}
+
 #copy{
-    background-image: url("/images/clipboard-paste-memory-editor-copy-paste-svgrepo-com.svg");
+    background-image: url("/images/pngwing.com.png");
     background-size: cover;
-    padding: .5rem;
+    padding: .7rem;
     position: relative;
     border: none;
+    background-color: transparent;
+    cursor: pointer;
+    right:2.5rem;
+}
+
+#copy:hover{
+    opacity: 0.9;
+}
+
+#copy:active{
+    opacity: 0.8;
+}
+
+#strength{
+    position: relative;
+}
+
+.flexing{
+    display: flex;
+}
+
+.color{
+    width: .5rem;
+    height: 1.4rem;
+    background-color: white;
+    position: relative;
+    margin: .1rem;
+    top: .4rem;
+    right: 2.5rem;
+}
+
+
+.left-col{
+      background-color: #1b2431;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+input[type="checkbox"] {
+    margin: .7rem .7rem .7rem auto ;
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+
+ul {
+    list-style-type: none;
+  }
+
+
+
+.flexing{
+    margin: 1rem auto   ;
+}
+.flexed{
+    display: flex;
+
+    align-items: center;
+}
+
+.flexed>button{
+    margin: .4rem .3rem 1rem;
+    padding: .1rem .7rem;
+    background-color: #10B981;
+    border-radius: .2rem;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.9;
+}
+button:active{
+    opacity: 0.8;
+}
+
+
+#generate{
+    background-color: #10B981;
+    border: none;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius:.2rem;
+    margin: .5rem auto;
+    cursor: pointer;
 }
