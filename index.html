@@ -15,16 +15,16 @@
             </h1>
             <p>Never use an insecure password again.</p>
 
-                <div>
+                <div id="thePasswords">
                     <label for="password-one">
-                        <input type="text" id="password-one">
+                        <input type="text" id="password-one" placeholder="P4S5W0rD!" disabled>
                     </label>
             
                     <button id="copy">
 
                     </button>
                     <label for="password-two">
-                        <input type="text" id="password-two">
+                        <input type="text" id="password-two" placeholder="P4S5W0rD!" disabled>
                     </label>
 
                     <button id="copy">
@@ -36,15 +36,17 @@
 
         <div class="left-col">
             <p>
-                Character Length <span id="character-length">0</span>
+                Character Length: <span id="character-length">0</span>
             </p>
-            <button>
+            <div class="flexed">
+            <button id="increment">
                 +
-            </button>
+            </button id="decrement">
             <button>
                 -
             </button>
-                <div>
+        </div>
+                <div class="myinputs">
                     <ul>
                         <li><input type="checkbox">Include Uppercase Letters</button></li>
                         <li><input type="checkbox">Include Lowercase Letters</button></li>
@@ -52,14 +54,19 @@
                         <li><input type="checkbox">Include Symbols</button></li>
                     </ul>
 
-                <div>
+                <div class="flexing">
                     <label for="strength"> 
-                        <input type="text" id="strength" placeholder="STRENGTH">
+                        <input type="text" id="strength" placeholder="STRENGTH" disabled>
                     </label>
-                    <div id="color-gray"></div>
-                    <div id="color-green"></div>
-                    <div id="color-red"></div>
+             
+                    <div id="color-gray" class="color"></div>
+                    <div id="color-green" class="color"></div>
+                    <div id="color-red" class="color"></div>
+                    
                 </div>
+                <button id="generate">
+                    GENERATE
+                </button>
         </div>
     </div>
 </body>
