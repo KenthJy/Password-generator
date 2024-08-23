@@ -90,7 +90,7 @@ generator.addEventListener('click', function() {
         return;
     }
 
-   // Generate the passwords
+   // Generate the passwordssss
    let thePasswordOne = "";
    let thePasswordTwo = "";
 
