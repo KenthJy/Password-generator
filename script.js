@@ -24,7 +24,7 @@ const generator = document.getElementById('generate');
 const passwordDisplayOne = document.getElementById('password-one');
 const passwordDisplayTwo = document.getElementById('password-two');
 
-//copy buttons
+//copy button 
 const copyPasswordOne = document.querySelector('.copy-one')
 const copyPasswordTwo = document.querySelector('.copy-two')
 
